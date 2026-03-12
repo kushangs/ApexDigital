@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing & Plans — Apex Digital</title>
+  <meta name="description" content="Transparent, flat-fee monthly subscriptions for Google Ads, Meta Ads, and Influencer Marketing management." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">⚡</div>
+      Apex Digital
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Services ▾</a>
+        <div class="dropdown-menu">
+          <a href="google-ads.html">🎯 Google Ads</a>
+          <a href="meta-ads.html">📘 Meta Ads</a>
+          <a href="influencer-marketing.html">🌟 Influencer Marketing</a>
+        </div>
+      </li>
+      <li><a href="billing.html" class="active">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-hero" style="padding-bottom:60px;">
+    <div class="page-hero-bg">
+      <div class="glow" style="background: radial-gradient(ellipse, rgba(124,58,237,0.15) 0%, transparent 70%);"></div>
+    </div>
+    <div class="page-hero-content">
+      <div class="hero-badge"><span class="dot"></span>No hidden fees · Cancel anytime</div>
+      <h1>Simple, <span class="gradient-text">Transparent</span> Pricing</h1>
+      <p>Flat monthly retainers — no percentage-of-spend surprises. Choose the plan that fits your goals, and scale when you're ready.</p>
+    </div>
+  </div>
+
+  <!-- BILLING TOGGLE -->
+  <section style="padding-top: 0; padding-bottom: 0;">
+    <div class="billing-toggle">
+      <span class="billing-monthly active">Monthly</span>
+      <div class="toggle-switch" id="billingToggle"></div>
+      <span class="billing-annual">Annual <span class="savings-badge">Save 20%</span></span>
+    </div>
+  </section>
+
+  <!-- GOOGLE ADS PLANS -->
+  <section style="padding-top: 40px;">
+    <div class="section-header centered animate-on-scroll">
+      <span class="section-label">Google Ads</span>
+      <h2 class="section-title">Google Ads <span class="gradient-text">Management Plans</span></h2>
+      <p class="section-subtitle">All plans include a dedicated account manager, weekly reporting, and our proprietary optimization framework.</p>
+    </div>
+    <div class="grid-3">
+      <!-- Starter -->
+      <div class="pricing-card animate-on-scroll">
+        <div class="plan-name">Starter</div>
+        <div class="price">$<span class="price-amount" data-monthly="799" data-annual="639">799</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Up to $5,000/mo ad spend</li>
+          <li><span class="check">✓</span>1 Google Ads account</li>
+          <li><span class="check">✓</span>Search & Display campaigns</li>
+          <li><span class="check">✓</span>Keyword research & setup</li>
+          <li><span class="check">✓</span>Weekly performance report</li>
+          <li><span class="check">✓</span>Dedicated account manager</li>
+          <li><span class="cross">✗</span>Shopping / Performance Max</li>
+          <li><span class="cross">✗</span>YouTube campaigns</li>
+          <li><span class="cross">✗</span>Custom Looker Studio dashboard</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+      <!-- Growth (featured) -->
+      <div class="pricing-card featured animate-on-scroll">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="plan-name">Growth</div>
+        <div class="price gradient-text">$<span class="price-amount" data-monthly="1499" data-annual="1199">1,499</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Up to $25,000/mo ad spend</li>
+          <li><span class="check">✓</span>Up to 3 Google Ads accounts</li>
+          <li><span class="check">✓</span>All campaign types incl. PMax</li>
+          <li><span class="check">✓</span>Advanced bid strategy management</li>
+          <li><span class="check">✓</span>A/B ad copy testing</li>
+          <li><span class="check">✓</span>Weekly report + strategy call</li>
+          <li><span class="check">✓</span>Shopping & YouTube ads</li>
+          <li><span class="check">✓</span>Custom Looker Studio dashboard</li>
+          <li><span class="cross">✗</span>White-glove onboarding</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+      <!-- Scale -->
+      <div class="pricing-card animate-on-scroll">
+        <div class="plan-name">Scale</div>
+        <div class="price">$<span class="price-amount" data-monthly="2999" data-annual="2399">2,999</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Unlimited ad spend</li>
+          <li><span class="check">✓</span>Unlimited accounts</li>
+          <li><span class="check">✓</span>All campaign types</li>
+          <li><span class="check">✓</span>Senior strategist assigned</li>
+          <li><span class="check">✓</span>Daily campaign monitoring</li>
+          <li><span class="check">✓</span>Bi-weekly strategy calls</li>
+          <li><span class="check">✓</span>Custom attribution modelling</li>
+          <li><span class="check">✓</span>White-glove onboarding</li>
+          <li><span class="check">✓</span>Priority Slack support</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- META ADS PLANS -->
+  <section style="background: var(--bg-secondary);">
+    <div class="section-header centered animate-on-scroll">
+      <span class="section-label">Meta Ads</span>
+      <h2 class="section-title">Meta Ads <span class="gradient-text-2">Management Plans</span></h2>
+      <p class="section-subtitle">Facebook & Instagram advertising powered by data-driven creative strategy and audience architecture.</p>
+    </div>
+    <div class="grid-3">
+      <div class="pricing-card animate-on-scroll">
+        <div class="plan-name">Starter</div>
+        <div class="price">$<span class="price-amount" data-monthly="749" data-annual="599">749</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Up to $5,000/mo ad spend</li>
+          <li><span class="check">✓</span>Facebook or Instagram (choose 1)</li>
+          <li><span class="check">✓</span>3 ad creative variations/mo</li>
+          <li><span class="check">✓</span>Pixel setup & events</li>
+          <li><span class="check">✓</span>Weekly performance report</li>
+          <li><span class="cross">✗</span>Retargeting funnels</li>
+          <li><span class="cross">✗</span>Catalog / Dynamic ads</li>
+          <li><span class="cross">✗</span>CAPI server-side tracking</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+      <div class="pricing-card featured animate-on-scroll">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="plan-name">Growth</div>
+        <div class="price gradient-text-2">$<span class="price-amount" data-monthly="1399" data-annual="1119">1,399</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Up to $20,000/mo ad spend</li>
+          <li><span class="check">✓</span>Facebook & Instagram</li>
+          <li><span class="check">✓</span>8 ad creative variations/mo</li>
+          <li><span class="check">✓</span>Retargeting funnel setup</li>
+          <li><span class="check">✓</span>Lookalike audience creation</li>
+          <li><span class="check">✓</span>CAPI server-side tracking</li>
+          <li><span class="check">✓</span>Weekly report + strategy call</li>
+          <li><span class="cross">✗</span>Catalog / DPA campaigns</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+      <div class="pricing-card animate-on-scroll">
+        <div class="plan-name">Scale</div>
+        <div class="price">$<span class="price-amount" data-monthly="2799" data-annual="2239">2,799</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Unlimited ad spend</li>
+          <li><span class="check">✓</span>Facebook, Instagram & Reels</li>
+          <li><span class="check">✓</span>Unlimited creatives</li>
+          <li><span class="check">✓</span>Full retargeting architecture</li>
+          <li><span class="check">✓</span>Catalog & dynamic product ads</li>
+          <li><span class="check">✓</span>Video ad production (2/mo)</li>
+          <li><span class="check">✓</span>Bi-weekly strategy calls</li>
+          <li><span class="check">✓</span>Priority Slack support</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFLUENCER PLANS -->
+  <section>
+    <div class="section-header centered animate-on-scroll">
+      <span class="section-label">Influencer Marketing</span>
+      <h2 class="section-title">Influencer Campaign <span class="gradient-text">Packages</span></h2>
+      <p class="section-subtitle">End-to-end influencer management. You focus on your business; we manage the creators.</p>
+    </div>
+    <div class="grid-3">
+      <div class="pricing-card animate-on-scroll">
+        <div class="plan-name">Launch</div>
+        <div class="price">$<span class="price-amount" data-monthly="2499" data-annual="1999">2,499</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Up to 5 influencers/month</li>
+          <li><span class="check">✓</span>Nano & micro tier focus</li>
+          <li><span class="check">✓</span>Creator sourcing & vetting</li>
+          <li><span class="check">✓</span>Brief & contract management</li>
+          <li><span class="check">✓</span>Content review</li>
+          <li><span class="check">✓</span>Post-campaign report</li>
+          <li><span class="cross">✗</span>Macro or mega influencers</li>
+          <li><span class="cross">✗</span>Paid usage rights negotiation</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+      <div class="pricing-card featured animate-on-scroll">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="plan-name">Amplify</div>
+        <div class="price gradient-text">$<span class="price-amount" data-monthly="4999" data-annual="3999">4,999</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Up to 15 influencers/month</li>
+          <li><span class="check">✓</span>Nano, micro & macro tiers</li>
+          <li><span class="check">✓</span>All creator management</li>
+          <li><span class="check">✓</span>Paid usage rights negotiation</li>
+          <li><span class="check">✓</span>Cross-platform campaigns</li>
+          <li><span class="check">✓</span>Content repurposing for ads</li>
+          <li><span class="check">✓</span>Real-time tracking dashboard</li>
+          <li><span class="cross">✗</span>Celebrity / mega influencers</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+      <div class="pricing-card animate-on-scroll">
+        <div class="plan-name">Dominate</div>
+        <div class="price">$<span class="price-amount" data-monthly="9999" data-annual="7999">9,999</span></div>
+        <div class="price-period">/ month · billed monthly</div>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span>Unlimited influencers</li>
+          <li><span class="check">✓</span>All tiers including celebrity</li>
+          <li><span class="check">✓</span>Full talent management</li>
+          <li><span class="check">✓</span>Long-term ambassador deals</li>
+          <li><span class="check">✓</span>Cross-platform orchestration</li>
+          <li><span class="check">✓</span>Paid media amplification</li>
+          <li><span class="check">✓</span>Bi-weekly strategy calls</li>
+          <li><span class="check">✓</span>Dedicated campaign manager</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL-SERVICE BUNDLE -->
+  <section style="background: var(--bg-secondary);">
+    <div style="max-width:860px; margin:0 auto;" class="animate-on-scroll">
+      <div style="background:var(--bg-card); border:1px solid rgba(124,58,237,0.4); border-radius:var(--radius-lg); padding:48px; box-shadow:0 0 80px rgba(124,58,237,0.1); text-align:center;">
+        <div style="display:inline-block; background:var(--accent-gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-size:0.75rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:12px;">Best Value</div>
+        <h2 style="font-size:2.2rem; font-weight:800; margin-bottom:12px;">Full-Service Bundle</h2>
+        <p style="color:var(--text-secondary); max-width:520px; margin:0 auto 32px; line-height:1.7;">Combine all three services and save 25%. One team, one strategy, full-funnel domination.</p>
+        <div style="display:flex; align-items:baseline; justify-content:center; gap:12px; margin-bottom:8px;">
+          <div style="font-family:'Syne',sans-serif; font-size:3rem; font-weight:800;" class="gradient-text">$<span class="price-amount" data-monthly="6999" data-annual="5599">6,999</span></div>
+          <div style="font-size:1rem; color:var(--text-muted);">/month</div>
+        </div>
+        <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:32px;">
+          <s style="color:var(--text-muted);">$9,247 if purchased separately</s>
+          <span style="color:#4ade80; margin-left:8px; font-weight:600;">You save $2,248/mo</span>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:36px; text-align:left;">
+          <div style="background:var(--bg-secondary); border-radius:var(--radius-sm); padding:20px;">
+            <div style="font-size:1.4rem; margin-bottom:8px;">🎯</div>
+            <div style="font-weight:700; margin-bottom:4px; font-size:0.9rem;">Google Ads Growth</div>
+            <div style="font-size:0.78rem; color:var(--text-muted);">Up to $25K ad spend managed</div>
+          </div>
+          <div style="background:var(--bg-secondary); border-radius:var(--radius-sm); padding:20px;">
+            <div style="font-size:1.4rem; margin-bottom:8px;">📘</div>
+            <div style="font-weight:700; margin-bottom:4px; font-size:0.9rem;">Meta Ads Growth</div>
+            <div style="font-size:0.78rem; color:var(--text-muted);">Facebook & Instagram managed</div>
+          </div>
+          <div style="background:var(--bg-secondary); border-radius:var(--radius-sm); padding:20px;">
+            <div style="font-size:1.4rem; margin-bottom:8px;">🌟</div>
+            <div style="font-weight:700; margin-bottom:4px; font-size:0.9rem;">Influencer Launch</div>
+            <div style="font-size:0.78rem; color:var(--text-muted);">5 creators fully managed</div>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-lg" style="padding:16px 48px;">Claim Bundle Deal →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div style="max-width:700px; margin:0 auto;">
+      <div class="section-header centered animate-on-scroll">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Pricing <span class="gradient-text">Questions</span></h2>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;" class="animate-on-scroll">
+        <div class="faq-item">
+          <button class="faq-question">
+            Is the ad spend budget included in the management fee?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">No. Our fees are management retainers only. Your advertising budget is paid directly to Google or Meta and is entirely separate. We specify the recommended ad spend for each plan tier.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Are there any setup fees?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">No setup fees on our standard plans. Onboarding, account audits, and initial strategy sessions are included in your first month's retainer at no additional cost.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I cancel at any time?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">Monthly plans can be cancelled with 30 days' notice. Annual plans are non-refundable but include the 20% discount. We're confident in our results — most clients stay for years.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What if I exceed my ad spend tier?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">If your spend consistently exceeds your plan's tier, we'll recommend upgrading to the next plan. We'll never penalise you for success — we'll reach out proactively before this becomes an issue.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you offer custom enterprise plans?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">Absolutely. For brands spending over $100K/month or requiring bespoke strategy, contact us for a custom proposal. Enterprise plans include dedicated teams, SLAs, and custom reporting.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How quickly will I see results?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">Most clients see meaningful performance improvements within 30–60 days. The first two weeks focus on account setup and strategy. Weeks 3–8 involve rapid testing. Sustainable ROAS gains are typically achieved by month 3.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="glow"></div>
+    <h2>Not Sure Which Plan Is <span class="gradient-text">Right For You?</span></h2>
+    <p>Book a free 30-minute call. We'll recommend the best plan based on your goals and budget.</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">Book Free Consultation →</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon" style="width:32px;height:32px;background:linear-gradient(135deg,#7c3aed,#06b6d4);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;">⚡</div>
+          Apex Digital
+        </a>
+        <p>Full-service performance marketing agency specializing in Google Ads, Meta Ads, and Influencer Marketing.</p>
+        <div class="footer-social">
+          <a href="#">𝕏</a><a href="#">in</a><a href="#">ig</a><a href="#">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="google-ads.html">Google Ads</a></li>
+          <li><a href="meta-ads.html">Meta Ads</a></li>
+          <li><a href="influencer-marketing.html">Influencer Marketing</a></li>
+          <li><a href="billing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:25BBA207@nirmauni.ac.in">25BBA207@nirmauni.ac.in</a></li>
+          <li><a href="tel:+917498458955">+91 74984 58955</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Apex Digital Agency. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Billing toggle specific
+    const toggle = document.getElementById('billingToggle');
+    const monthlyLabel = document.querySelector('.billing-monthly');
+    const annualLabel = document.querySelector('.billing-annual');
+    const priceAmounts = document.querySelectorAll('.price-amount');
+    let isAnnual = false;
+
+    toggle.addEventListener('click', () => {
+      isAnnual = !isAnnual;
+      toggle.classList.toggle('on', isAnnual);
+      monthlyLabel.classList.toggle('active', !isAnnual);
+      annualLabel.classList.toggle('active', isAnnual);
+
+      priceAmounts.forEach(el => {
+        const val = isAnnual ? el.dataset.annual : el.dataset.monthly;
+        const num = parseFloat(val);
+        el.textContent = num >= 1000 ? num.toLocaleString() : val;
+      });
+
+      document.querySelectorAll('.price-period').forEach(el => {
+        el.textContent = isAnnual ? '/ month · billed annually' : '/ month · billed monthly';
+      });
+    });
+  </script>
+</body>
+</html>
